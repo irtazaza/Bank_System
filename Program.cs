@@ -78,7 +78,7 @@ public class BasicAccount : Account
             return;
         }
         Balance -= amount;
-        Console.WriteLine($"${amount} withrew successfully (^--^). \n\nPress any key to continue...");
+        Console.WriteLine($"${amount} withdrew successfully (^--^). \n\nPress any key to continue...");
     }
 
     //
@@ -96,7 +96,7 @@ public class BasicAccount : Account
             string input;
             name = Console.ReadLine();
 
-            Account account = new Account(name, 0);
+            BasicAccount account = new BasicAccount(name, 0);
 
 
             while (true)
